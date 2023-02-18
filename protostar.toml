@@ -1,6 +1,18 @@
 [project]
 protostar-version = "0.9.1"
 lib-path = "lib"
+cairo-path = ["lib/cairo_contracts/src"]
 
 [contracts]
-main = ["src/main.cairo"]
+storage = [
+    "homework_6/contracts/storage/storage.cairo",
+]
+erc20 = [
+    "homework_6/contracts/erc20/erc20.cairo",
+]
+erc721 = [
+    "homework_6/contracts/erc721/erc721.cairo",
+]
+consortium = [
+    "homework_6/contracts/consortium/consortium.cairo",
+]
