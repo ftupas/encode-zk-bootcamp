@@ -11,5 +11,8 @@ clean:
 test:
 	protostar test
 
+declare:
+	protostar declare ./build/$(contract).json --account-address $(account_address) --network testnet --max-fee auto
+
 deploy:
-	protostar deploy ./build/$(contract).json --inputs $(constructor_args) --network alpha-goerli
+	protostar deploy $(class_hash) --inputs $(constructor_args) --account-address $(account_address) --network testnet --max-fee auto --wait-for-acceptance
