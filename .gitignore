@@ -130,3 +130,6 @@ dmypy.json
 
 # MacOS
 .DS_Store
+
+# Node modules
+homework_9/starknet_js_demo/node_modules
